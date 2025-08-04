@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlueTeam: Cyber Escape Simulator</title>
+  <script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.production.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.production.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/babel-standalone@7.22.5/babel.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="text/babel">
+    function App() {
+      return (
+        <div className="min-h-screen bg-gray-900 text-white font-sans">
+          {/* Header Section */}
+          <header className="bg-blue-800 py-6 text-center">
+            <h1 className="text-4xl font-bold">BlueTeam: Cyber Escape Simulator</h1>
+            <p className="mt-2 text-lg">A Defensive Cybersecurity Simulation Experience</p>
+          </header>
+
+          {/* Hero Section with Image */}
+          <section className="flex flex-col items-center py-12 px-4">
+            <img
+              src="https://via.placeholder.com/800x400.png?text=Cybersecurity+Dashboard"
+              alt="Cybersecurity Dashboard"
+              className="w-full max-w-4xl rounded-lg shadow-lg mb-6"
+            />
+            <p className="text-xl text-center max-w-2xl">
+              Step into the role of an SOC analyst and defend against a progressive cyber breach in this interactive simulation.
+            </p>
+          </section>
+
+          {/* Project Overview */}
+          <section className="py-12 px-4 bg-gray-800">
+            <h2 className="text-3xl font-semibold text-center mb-8">Project Overview</h2>
+            <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="bg-gray-700 p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-bold mb-2">Objective</h3>
+                <p>
+                  Simulate real-world cybersecurity incidents to train Blue Team analysts in identifying and mitigating threats.
+                </p>
+              </div>
+              <div className="bg-gray-700 p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-bold mb-2">Target Audience</h3>
+                <p>
+                  Cybersecurity enthusiasts, SOC analysts, and students learning defensive security strategies.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* Team Section */}
+          <section className="py-12 px-4">
+            <h2 className="text-3xl font-semibold text-center mb-8">Meet the Team</h2>
+            <div className="max-w-4xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div className="bg-gray-700 p-6 rounded-lg shadow-md text-center">
+                <img
+                  src="https://via.placeholder.com/150.png?text=Yousry"
+                  alt="Yousry"
+                  className="w-24 h-24 rounded-full mx-auto mb-4"
+                />
+                <h3 className="text-lg font-bold">Yousry</h3>
+                <p>Scenario & Logs Designer</p>
+                <p className="text-sm text-gray-300">Designs attack scenarios and log files.</p>
+              </div>
+              <div className="bg-gray-700 p-6 rounded-lg shadow-md text-center">
+                <img
+                  src="https://via.placeholder.com/150.png?text=Zeyad"
+                  alt="Zeyad"
+                  className="w-24 h-24 rounded-full mx-auto mb-4"
+                />
+                <h3 className="text-lg font-bold">Zeyad</h3>
+                <p>Frontend + Support</p>
+                <p className="text-sm text-gray-300">Assists with UI and team support.</p>
+              </div>
+              <div className="bg-gray-700 p-6 rounded-lg shadow-md text-center">
+                <img
+                  src="https://via.placeholder.com/150.png?text=Tahany"
+                  alt="Tahany"
+                  className="w-24 h-24 rounded-full mx-auto mb-4"
+                />
+                <h3 className="text-lg font-bold">Tahany</h3>
+                <p>Documentation & Testing</p>
+                <p className="text-sm text-gray-300">Handles documentation and testing.</p>
+              </div>
+              <div className="bg-gray-700 p-6 rounded-lg shadow-md text-center">
+                <img
+                  src="https://via.placeholder.com/150.png?text=Toka"
+                  alt="Toka"
+                  className="w-24 h-24 rounded-full mx-auto mb-4"
+                />
+                <h3 className="text-lg font-bold">Toka</h3>
+                <p>Backend Developer</p>
+                <p className="text-sm text-gray-300">Manages API and game logic.</p>
+              </div>
+            </div>
+          </section>
+
+          {/* Tools Section */}
+          <section className="py-12 px-4 bg-gray-800">
+            <h2 className="text-3xl font-semibold text-center mb-8">Tools in the Game</h2>
+            <div className="max-w-4xl mx-auto space-y-4">
+              <div className="bg-gray-700 p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-bold">Email Analyzer</h3>
+                <p>Analyze suspicious emails, including headers and links.</p>
+              </div>
+              <div className="bg-gray-700 p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-bold">PCAP Viewer</h3>
+                <p>View and analyze network traffic for potential threats.</p>
+              </div>
+              <div className="bg-gray-700 p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-bold">Log Searcher</h3>
+                <p>Search and analyze Syslogs and Authentication logs.</p>
+              </div>
+              <div className="bg-gray-700 p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-bold">File Sandbox</h3>
+                <p>Inspect and analyze potentially malicious files.</p>
+              </div>
+              <div className="bg-gray-700 p-6 rounded-lg shadow-md">
+                <h3 className="text-xl font-bold">Report Builder</h3>
+                <p>Generate final reports based on your findings.</p>
+              </div>
+            </div>
+          </section>
+
+          {/* Footer */}
+          <footer className="bg-blue-800 py-6 text-center">
+            <p>BlueTeam: Cyber Escape Simulator &copy; 2025</p>
+            <p>Built with React and Tailwind CSS</p>
+          </footer>
+        </div>
+      );
+    }
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<App />);
+  </script>
+</body>
+</html>

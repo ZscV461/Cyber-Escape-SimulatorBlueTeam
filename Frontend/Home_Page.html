@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BlueTeam: Cyber Escape Simulator</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background-color: #04040a; font-family: 'Segoe UI', sans-serif; color: #e2e8f0; }
+    .fade-in { animation: fadeIn ease 1.5s; }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    .role-card:hover { transform: translateY(-5px); transition: 0.3s; }
+    a { transition: background-color 0.3s; }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <section class="py-16 text-center fade-in">
+    <h1 class="text-5xl font-bold text-blue-400 mb-4">BlueTeam: Cyber Escape Simulator</h1>
+    <p class="max-w-3xl mx-auto text-lg sm:text-xl text-blue-200 mb-6 leading-relaxed">
+      Dive into a thrilling cybersecurity simulation. Choose your role: SOC Analyst, Incident Responder, or go full mode.
+    </p>
+    <img src="../Data/1.jpg" alt="Main Dashboard" class="mx-auto rounded-lg shadow-xl w-full max-w-3xl"/>
+  </section>
+
+  <!-- Role Selection -->
+  <section class="py-20 fade-in">
+    <h2 class="text-3xl font-bold text-center text-blue-300 mb-12">🧠 Choose Your Role</h2>
+    <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-6">
+
+      <!-- SOC Analyst -->
+      <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden role-card">
+        <img src="../Data/0.png" alt="SOC KPI Dashboard" class="w-full h-48 object-cover"/>
+        <div class="p-6 text-center">
+          <h3 class="text-2xl font-bold text-blue-400 mb-2">SOC Analyst</h3>
+          <p class="text-blue-200 text-sm mb-4">Track threat metrics, detect anomalies in real-time logs.</p>
+          <a href="soc.html" class="bg-blue-600 hover:bg-blue-700 inline-block px-6 py-2 rounded-full font-medium">Start SOC Role</a>
+        </div>
+      </div>
+
+      <!-- Incident Response -->
+      <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden role-card">
+        <img src="../Data/3.png" alt="Incident Response Team" class="w-full h-48 object-cover"/>
+        <div class="p-6 text-center">
+          <h3 class="text-2xl font-bold text-blue-400 mb-2">Incident Response</h3>
+          <p class="text-blue-200 text-sm mb-4">Investigate incidents, contain threats, and recover quickly.</p>
+          <a href="ir.html" class="bg-blue-600 hover:bg-blue-700 inline-block px-6 py-2 rounded-full font-medium">Start IR Role</a>
+        </div>
+      </div>
+
+      <!-- Full Simulation -->
+      <div class="bg-gray-800 rounded-xl shadow-lg overflow-hidden role-card">
+        <img src="../Data/2.jpg" alt="Full Simulation View" class="w-full h-48 object-cover"/>
+        <div class="p-6 text-center">
+          <h3 class="text-2xl font-bold text-blue-400 mb-2">Full Simulation</h3>
+          <p class="text-blue-200 text-sm mb-4">Combine both roles in a dynamic simulation experience.</p>
+          <a href="full.html" class="bg-blue-600 hover:bg-blue-700 inline-block px-6 py-2 rounded-full font-medium">Start Full Mode</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center text-sm text-blue-200 bg-gray-900">
+    BlueTeam: Cyber Escape Simulator © 2025 – Built with 💙 by Cyber Escape Team
+  </footer>
+
+</body>
+</html>
